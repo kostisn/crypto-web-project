@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleee.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Blockchain and ethics</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="btn">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="btn">
+        <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+        <div class="text">Explore</div>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="evol-btn"
+              >Evolution & Applications
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="evol-show">
+              <li><a href="pr.html">History </a></li>
+              <li><a href="def.html">Funcionality</a></li>
+              <li><a href="trit.html">Types of Platforms</a></li>
+              <li><a href="tetarti.html">Application scenarios</a></li>
+              <li><a href="pemti.html ">Linking with Cryptocurrency</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="trade-btn"
+              >Trade-offs & Safeguards
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="trade-show">
+              <li><a href="Blockchain-Advant.html"> Advantages</a></li>
+              <li><a href="Blockchain-Disadv.html"> Disadvantages</a></li>
+              <li><a href="Blockchain-privacy.html"> Privacy</a></li>
+              <li><a href="Blockchain-secur.html"> Secutiry</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="compl-btn"
+              >Complex Implications
+              <span class="fas fa-caret-down third"></span>
+            </a>
+            <ul class="compl-show">
+              <li>
+                <a href="Blockchain and governance.html"> Role of Governance</a>
+              </li>
+              <li>
+                <a href="Blockchain and the law.html"> Legal Landscape</a>
+              </li>
+              <li>
+                <a href="Blockchain and ethics.html"> Ethical principles</a>
+              </li>
+              <li>
+                <a href="Blockchain and the future.html">
+                  A Glimpse at the Future</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1 id="h1">Blockchain and ethics</h1>
+      </div>
+      <div id="text">
+        Blockchain technology has the potential to revolutionize various
+        industries, but it also raises ethical concerns. One ethical concern is
+        related to the decentralization and anonymity of blockchain
+        transactions. This can make it difficult to track and prevent illegal
+        activities such as money laundering, terrorist financing, and tax
+        evasion. Another ethical concern is related to the impact of blockchain
+        on privacy. Blockchain transactions are recorded on a public ledger,
+        which can make it difficult to maintain anonymity. This can raise
+        concerns about data privacy and security, particularly in the context of
+        personal medical or financial information. Additionally, the rise of
+        blockchain-based platforms and decentralized autonomous organizations
+        (DAOs) has led to questions about the governance and accountability of
+        these entities. As these platforms operate independently, it is
+        difficult to hold them accountable for their actions, which can lead to
+        ethical dilemmas. Lastly, the energy consumption of blockchain networks
+        is a concern. Bitcoin and other proof-of-work blockchain networks
+        require significant computational power, which results in high energy
+        consumption. This can have a negative impact on the environment.
+        Overall, it's important to consider the ethical implications of
+        blockchain technology as it continues to be developed and adopted.
+      </div>
+    </main>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li>
+          <a href="https://www.facebook.com/athtech.gr"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://mobile.twitter.com/athenstechgr"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/school/athens-tech-college/"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/athenstechnicalcollege/"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <ul class="f_menu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="FAQs.html">FAQ</a></li>
+      </ul>
+      <p>&copy;2023 Tsetsekaverse | All Rights Reserved</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      $(".btn").click(function () {
+        $(this).toggleClass("click");
+        $(".sidebar").toggleClass("show");
+      });
+      $(".evol-btn").click(function () {
+        $("nav ul .evol-show").toggleClass("show");
+        $("nav ul .first").toggleClass("rotate");
+      });
+      $(".trade-btn").click(function () {
+        $("nav ul .trade-show").toggleClass("show1");
+        $("nav ul .second").toggleClass("rotate");
+      });
+      $(".compl-btn").click(function () {
+        $("nav ul .compl-show").toggleClass("show2");
+        $("nav ul .third").toggleClass("rotate");
+      });
+      $("nav ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+  </body>
+</html>

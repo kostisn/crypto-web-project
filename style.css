@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Home page */
+/* Home page */
+/* Home page */
+
+* {
+  user-select:text;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(40, 13, 63);
+  height: 130vh;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+#home {
+  top: 2cm;
+  height: 35cm;
+  position:relative;
+  width: 100%;
+  background-size: 1000px;
+}
+
+p{
+  margin:auto;
+  font-size: 70%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align:left;
+  text-shadow: 1px 1px 10px#f200fab0;
+  vertical-align: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor:text;
+  width:1000px;
+}
+
+a {
+  text-decoration: none;
+  color: cyan;
+}
+
+h2 p1{
+  font-weight: 600;
+font-size: larger;
+color: rgb(204, 0, 255);
+text-shadow: 1px 1px 15px#00abfa;
+-webkit-text-stroke: 0.3px rgb(0, 0, 0);
+}
+
+li {
+  list-style-type: none;
+}
+
+/*wheat*/
+  header {
+    text-align:center;
+  }
+  
+.site-title h1 {
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(204, 0, 255);
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  text-shadow:
+  0 0 5px rgb(119, 0, 255),
+  0 0 10px rgb(162, 0, 255),
+  0 0 20px rgb(111, 0, 255),
+  0 0 40px rgb(89, 0, 255),
+  0 0 80px rgb(255, 0, 255),
+  0 0 90px rgb(225, 0, 255),
+  0 0 100px rgb(225, 0, 255),
+  0 0 150px rgb(255, 0, 221);
+  -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+  user-select:none;
+  
+}
+
+
+  .overlay {
+    position:relative;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: wheat;
+    display:table-cell;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    padding-top: 2%;
+    padding-bottom: 3%;
+   
+  }
+  
+  .landing-text {
+    display:contents;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .landing-text h3 {
+    font-size: 200%;
+    font-weight: 700;
+    color: white;
+    font-family: "Lora", sans-serif;
+    text-shadow:
+    0 0 5px rgba(0, 255, 255, 0.486),
+    0 0 10px rgba(0, 247, 255, 0.466),
+    0 0 20px rgba(0, 217, 255, 0.288),
+    0 0 40px rgba(0, 174, 255, 0.274),
+    0 0 60px rgba(0, 238, 255, 0.089),
+    0 0 80px rgba(0, 238, 255, 0.24),
+    0 0 100px rgba(194, 80, 247, 0.39),
+    0 0 150px rgba(164, 84, 238, 0.267);
+    -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.171);
+  }
+  
+  /* End Home page */
+  /* End Home page */
+  /* End Home page */
+
+
+/* START OF NAVIGATION BAR*/
+/* START OF NAVIGATION BAR*/
+/* START OF NAVIGATION BAR*/
+
+
+.btn {
+  position: sticky;
+  top: 15px;
+  left: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #1b0125;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: left 0.6s ease;
+  z-index: 9999999999;
+}
+.btn.click {
+  left: 330px;
+}
+.btn span {
+  color: wheat;
+  font-size: 28px;
+  line-height: 45px;
+}
+.btn.click span:before {
+  content: "\f00d";
+  color: cyan;
+}
+.sidebar {
+  top: 0;
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  left: -320px;
+  transition: left 0.6s ease;
+  z-index: 9999999999;
+}
+.sidebar.show {
+  left: 0px;
+}
+.sidebar .text {
+  color: wheat;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1b0125;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  background: #0e001a;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li {
+  line-height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+nav ul li a {
+  position: relative;
+  color: wheat;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 30px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li.active a {
+  color: cyan;
+  background: #29012e;
+  border-left-color: cyan;
+  cursor: default;
+}
+nav ul li a:hover {
+  background: #29012e;
+}
+nav ul ul {
+  position: static;
+  display: none;
+}
+nav ul .evol-show.show {
+  display: block;
+}
+nav ul .trade-show.show1 {
+  display: block;
+}
+nav ul .compl-show.show2 {
+  display: block;
+}
+nav ul ul li {
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a {
+  font-size: 15px;
+  color: #e6e6e6;
+  padding-left: 40px;
+}
+nav ul li.active ul li a {
+  color: #e6e6e6;
+  background: #29012e;
+  border-left-color: transparent;
+}
+nav ul ul li a:hover {
+  color: cyan !important;
+  background: #310536 !important;
+  transform: scale(1.1);
+  width: 95%;
+  right: 5px;
+  cursor: pointer;
+}
+
+nav ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/* END OF NAVIGATION BAR*/
+/* END OF NAVIGATION BAR*/
+/* END OF NAVIGATION BAR*/
+
+
+/* Start of Footer */
+/* Start of Footer */
+/* Start of Footer */
+
+footer{
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  background: #090425;
+  height: 160px;
+  min-height: 100px;
+  padding: 30px 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  margin-bottom: -15cm;
+}
+
+footer .social_icon,
+footer .f_menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  flex-wrap: wrap;
+  z-index: 99999;
+}
+
+footer .social_icon li,
+footer .f_menu li{
+  list-style-type: none;
+}
+
+footer .social_icon li a{
+  font-size: 2em;
+  color:wheat;
+  margin: 0 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+  transform:translateY(-10px);
+  color: rgb(198, 138, 255);
+}
+
+footer .f_menu li a{
+  font-size: 1.2em;
+  color:rgb(163, 82, 240);
+  margin: 0 15px;
+  display: inline-block;
+  transition: 0.5s;  
+  text-decoration: none;
+  opacity: 0.65;
+}
+
+footer .f_menu li a:hover{
+  color: rgb(191, 122, 255);
+  opacity: 1;
+}
+
+footer p{
+color:wheat;
+text-align: center;
+font-size: 1.1em; 
+margin-bottom:20px;
+margin-top: 15px;
+}
+
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background:  url(waveee.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+  @keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+/* End of Footer*/
+/* End of Footer*/
+/* End of Footer*/
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    background: linear-gradient(#610564, rgb(1, 0, 2)); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+  background: linear-gradient(#f200fa, rgb(128, 0, 255)); /* Add a dark-grey background on hover */
+  }

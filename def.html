@@ -1,0 +1,36 @@
+
+<style>
+body{color: rgb(230, 222, 237);}
+body{background-color: rgb(40, 13, 63);}
+head{text-align: center;color: red;}
+</style>
+<head>
+<title>How does it work</title>
+</head>
+<body>
+<head>How does it work</head>
+<p>
+Blockchain works via a multistep process, which in simple terms happens as follows: </p>
+<ul>
+<li>An authorized participant inputs a transaction, which must be authenticated by the technology.</li>
+<li>That action creates a block that represents that specific transaction or data.</li>
+<li>The block is sent to every computer node in the network.</li>
+<li>Authorized nodes verify the transaction and add the block to the existing blockchain. (Nodes in public blockchain networks are referred to as miners; they're typically paid for this task -- often in a process called Proof of Work, or PoW -- usually in the form of cryptocurrency.)</li>
+<li>The update is distributed across the network, which finalizes the transaction.</li>
+</ul>
+<p>
+A blockchain ledger consists of two types of records, individual transactions and blocks. The first block consists of a header and data that pertain to transactions taking place within a set time period. The block's timestamp is used to help create an alphanumeric string called a hash.
+
+After the first block has been created, each subsequent block in the ledger uses the previous block's hash to calculate its own hash.
+</p>
+<p>
+Before a new block can be added to the chain, its authenticity must be verified by a computational process called validation or consensus. At this point in the blockchain process, a majority of nodes in the network must agree the new block's hash has been calculated correctly. Consensus ensures that all copies of the blockchain distributed ledger share the same state.
+
+Once a block has been added, it can be referenced in subsequent blocks, but it cannot be changed.
+
+If someone attempts to swap out a block, the hashes for previous and subsequent blocks will also change and disrupt the ledger's shared state.
+</p>
+
+When consensus is no longer possible, other computers in the network are aware that a problem has occurred and no new blocks will be added to the chain until the problem is solved.
+
+Typically, the block causing the error will be discarded and the consensus process will be repeated.

@@ -1,0 +1,407 @@
+/* KONSTANTINOS NOULAS */
+
+/*Hello Mr. Tsetsekas in all my 5 of 6 html and css pages i have used a template that i made it by myself from scratch using the FLEXBOX model as you can observe. Also I have used and external library  for the auto-type effect.*/
+@import url("https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #0d0d44 -26%, #9900cc 98%);
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #14141444;
+  background: url(/images/blockchainimg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header-text {
+  font-size: 35px;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1200px;
+  height: fit-content;
+  text-align: right;
+  margin-top: 100px;
+}
+
+.header-text h1 {
+  -webkit-text-stroke: 2px #60258e;
+  color: #dddddd;
+}
+
+#boxesimg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: max-content;
+}
+
+#section1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+  height: 600px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #dddddd;
+}
+
+#textsection1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 2px;
+  text-align: left;
+  height: 70%;
+  line-height: 1.5;
+}
+
+#sectionimg {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-right: 30px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #dddddd;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 900px;
+}
+
+.container2 p {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#titles {
+  color: #95359d;
+  background-color: #ffffffd4;
+  border-radius: 2px;
+  padding: 2px 3px 2px 3px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  margin-right: 5px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #090425;
+  height: 150px;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  margin-top: 150px;
+  padding-bottom: 50px;
+}
+
+footer .social_icon,
+footer .f_menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  flex-wrap: wrap;
+  z-index: 99999;
+}
+
+footer .social_icon li,
+footer .f_menu li {
+  list-style-type: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: blanchedalmond;
+  margin: 0 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+  color: rgb(198, 138, 255);
+}
+
+footer .f_menu li a {
+  font-size: 1.2em;
+  color: rgb(163, 82, 240);
+  margin: 0 15px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.65;
+}
+
+footer .f_menu li a:hover {
+  color: rgb(191, 122, 255);
+  opacity: 1;
+}
+
+footer p {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(waveee.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#progress {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 99999;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  color: #0d0055;
+}
+
+/* NAV BAR */
+
+.btn {
+  position: fixed;
+  top: 15px;
+  left: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #1b0125;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: left 0.6s ease;
+  z-index: 9999999999;
+}
+.btn.click {
+  left: 330px;
+}
+.btn span {
+  color: wheat;
+  font-size: 28px;
+  line-height: 45px;
+}
+.btn.click span:before {
+  content: "\f00d";
+  color: cyan;
+}
+.sidebar {
+  top: 0;
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  left: -320px;
+  transition: left 0.6s ease;
+  z-index: 9999999999;
+}
+.sidebar.show {
+  left: 0px;
+}
+.sidebar .text {
+  color: wheat;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1b0125;
+  letter-spacing: 1px;
+}
+
+nav {
+  font-family: "Poppins", sans-serif;
+}
+nav ul {
+  background: #0e001a;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li {
+  line-height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+nav ul li a {
+  position: relative;
+  color: wheat;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 30px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li.active a {
+  color: cyan;
+  background: #29012e;
+  border-left-color: cyan;
+}
+nav ul li a:hover {
+  background: #29012e;
+}
+nav ul ul {
+  position: static;
+  display: none;
+}
+nav ul .evol-show.show {
+  display: block;
+}
+nav ul .trade-show.show1 {
+  display: block;
+}
+nav ul .compl-show.show2 {
+  display: block;
+}
+nav ul ul li {
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a {
+  font-size: 15px;
+  color: #e6e6e6;
+  padding-left: 40px;
+}
+nav ul li.active ul li a {
+  color: #e6e6e6;
+  background: #29012e;
+  border-left-color: transparent;
+}
+nav ul ul li a:hover {
+  color: cyan !important;
+  background: #310536 !important;
+  transform: scale(1.1);
+  width: 95%;
+  right: 5px;
+}
+
+nav ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/* KONSTANTINOS NOULAS */
